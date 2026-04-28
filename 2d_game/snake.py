@@ -128,6 +128,7 @@ class SnakeGame:
                 shapes.Circle(center_x, center_y, radius, color=(0, 200, 0)).draw()
 
                 # connect the head directly to the next body segment
+                # source: code from Copilot
                 if len(self.snake) > 1:
                     next_x, next_y = self.snake[1]
                     dx = x - next_x
@@ -146,6 +147,7 @@ class SnakeGame:
                     shapes.Rectangle(x, center_y, CELL_SIZE, radius, color=(0, 200, 0)).draw()
 
                 # eyes further apart
+                # source: code from Copilot
                 eye_radius = max(3, CELL_SIZE // 8)
                 eye_offset = radius * 0.75
                 if dx > 0:
@@ -162,6 +164,7 @@ class SnakeGame:
                     shapes.Circle(center_x + eye_offset / 3, center_y + eye_offset / 2, eye_radius, color=(0, 0, 0)).draw()
 
                 # tongue
+                # source: code from Copilot
                 tl = CELL_SIZE // 4
                 tw = CELL_SIZE // 6
                 if dx > 0:
@@ -174,6 +177,7 @@ class SnakeGame:
                     shapes.Triangle(center_x, center_y - radius, center_x + tw/2, center_y - radius - tl, center_x - tw/2, center_y - radius - tl, color=(255, 0, 0)).draw()
             elif index == len(self.snake) - 1:
                 # Tail as triangle pointing in the direction of motion
+                # source: code from Copilot
                 if len(self.snake) > 1:
                     tail_x, tail_y = self.snake[-1]
                     prev_x, prev_y = self.snake[-2]
