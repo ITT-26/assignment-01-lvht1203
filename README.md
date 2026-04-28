@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Etw90P0Z)
-# DIPPID and Pyglet
+# Assignment 01: DIPPID and Pyglet
 
-## Assignment 01: DIPPID Sender Simulation
+## DIPPID Sender Simulation
 
 This assignment demonstrates simulating DIPPID input devices using UDP communication.
 
