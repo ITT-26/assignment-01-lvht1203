@@ -1,10 +1,10 @@
 from DIPPID import SensorUDP
 
-# use UPD (via WiFi) for communication
 PORT = 5700
 sensor = SensorUDP(PORT)
 
-def handle_hearbeat(data):
-    print(data)
+def handle_data(data):
+    print("Received:", data)
 
-sensor.register_callback('heartbeat', handle_hearbeat)
+sensor.register_callback('accelerometer', handle_data)
+sensor.register_callback('button_1', handle_data)
